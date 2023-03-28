@@ -11,10 +11,14 @@ medicine=[*
 	concept_patient(*<-sc_node_class;;*);
 	concept_disease(*<-sc_node_class;;*);
 	concept_drug(*<-sc_node_class;;*);
-	concept_virus(*<-sc_node_class;;*);
         nrel_type_of_disease(*<-sc_node_norole_relation;;*);
+		nrel_type_of_injury(*<-sc_node_norole_relation;;*);
+		nrel_type_of_defect(*<-sc_node_norole_relation;;*);
+		nrel_symptom(*<-sc_node_norole_relation;;*);
+		nrel_syndrome(*<-sc_node_norole_relation;;*);
+		nrel_pythology(*<-sc_node_norole_relation;;*);
+		nrel_learning(*<-sc_node_norole_relation;;*);
 		nrel_incubation_period(*<-sc_node_norole_relation;;*);
-		nrel_sympom(*<-sc_node_norole_relation;;*);
         nrel_cure(*<-sc_node_norole_relation;;*);
         nrel_active_substance(*<-sc_node_norole_relation;;*);;
 
@@ -23,11 +27,14 @@ medicine=[*
         	[Раздел.Предметная область медицина]
         	(* <- lang_ru;; *);;
 
-	section_subject_domain_of_medicine => nrel_main_idtf:
-		[Section.Subject domain of medicine]
+	    section_subject_domain_of_medicine => nrel_main_idtf:
+		    [Section.Subject domain of medicine]
         	(* <- lang_en;; *);;
     
-	concept_virus<-rrel_not_maximum_studied_object_class:subject_domain_of_medicine;;
+    subject_domain_of_medicine<-rrel_not_maximum_studied_object_class:{
+		section_subject_domain_of_traditional_medicine(*<-sc_node_struct;;*);
+		section_subject_domain_of_alternative_medicine(*<-sc_node_struct;;*)
+	};;
     
 	section_subject_domain_of_medicine<-non_atomic_section;;
 
@@ -37,11 +44,11 @@ medicine=[*
     
     	subject_domain_of_medicine => nrel_main_idtf:
         	[Subject domain of medicine]
-        	(* <- lang_;; *);;
+        	(* <- lang_en;; *);;
 
     	subject_domain_of_medicine=>nrel_private_subject_domain:
 		subject_domain_of_traditional_medicine(*<-sc_node_struct;;*);
-	        subject_domain_of_alternative_medicine(*<-sc_node_struct;;*);;
+	    subject_domain_of_alternative_medicine(*<-sc_node_struct;;*);;
 
 	subject_domain_of_medicine<=nrel_private_subject_domain:subject_domain_of_science(*<-sc_node_struct;;*);;
 
@@ -50,19 +57,15 @@ medicine=[*
     
         subject_domain_of_medicine->rrel_explored_relation:
         	nrel_type_of_disease(*<-sc_node_norole_relation;;*);
+		    nrel_type_of_injury(*<-sc_node_norole_relation;;*);
+			nrel_type_of_defect(*<-sc_node_norole_relation;;*);
+		    nrel_symptom(*<-sc_node_norole_relation;;*);
+		    nrel_syndrome(*<-sc_node_norole_relation;;*);
+		    nrel_pythology(*<-sc_node_norole_relation;;*);
+		    nrel_learning(*<-sc_node_norole_relation;;*);
 		    nrel_incubation_period(*<-sc_node_norole_relation;;*);
-		    nrel_sympom(*<-sc_node_norole_relation;;*);
             nrel_cure(*<-sc_node_norole_relation;;*);
             nrel_active_substance(*<-sc_node_norole_relation;;*);;
     
     	subject_domain_of_medicine<-subject_domain;;
 *];;		
-
-
-
-
-
-
-
-
-
