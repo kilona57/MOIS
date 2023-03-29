@@ -1,11 +1,11 @@
-medicine=[*
+Medicine=[*
 	sc_node_struct->section_subject_domain_of_medicine;;
 
 	section_subject_domain_of_medicine<=nrel_section_decomposition:{
 		section_subject_domain_of_traditional_medicine(*<-sc_node_struct;;*);
 		section_subject_domain_of_alternative_medicine(*<-sc_node_struct;;*)
 	};;
-	section_subject_domain_of_medicine->rrel_key_sc_element:
+	section_subject_domain_of_medicine->rrel_key_sc_element:subject_domain_of_medicine(*<-sc_node_struct;;*);
 	concept_medicine(*<-sc_node_class;;*);
 	concept_doctor(*<-sc_node_class;;*);
 	concept_patient(*<-sc_node_class;;*);
