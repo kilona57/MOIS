@@ -1,7 +1,4 @@
-TraditionalMedicine=[*
-	sc_node_struct->section_subject_domain_of_traditional_medicine;;
-
-	section_subject_domain_of_traditional_medicine<=nrel_section_decomposition:{
+section_subject_domain_of_traditional_medicine<=nrel_section_decomposition:{
 		section_subject_domain_of_psychiatry(*<-sc_node_struct;;*);
 		section_subject_domain_of_ophthalmology(*<-sc_node_struct;;*);
 		section_subject_domain_of_dermatology(*<-sc_node_struct;;*);
@@ -53,13 +50,3 @@ TraditionalMedicine=[*
     
     
           subject_domain_of_traditional_medicine<-subject_domain;;
-*];;		
-
-
-
-
-
-
-
-
-
