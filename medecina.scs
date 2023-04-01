@@ -11,7 +11,7 @@ sc_definition -> ...(*
     =>nrel_main_idtf:[Опр.(медицина)](*<-lang_ru;;*);;
 
     =>nrel_using_constants:{
-      medicine;
+      medicine
       
     };;
 *);;
