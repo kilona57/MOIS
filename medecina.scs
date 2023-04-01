@@ -1,4 +1,4 @@
-concept_medicine(*<-sc_node_class;;*);
+sc_node_class->medicine;;
 
 medicine=>nrel_main_idtf:[medicine](*<-lang_en;;*);;
 medicine=>nrel_main_idtf:[медицина](*<-lang_ru;;*);;
@@ -9,8 +9,4 @@ sc_definition -> ...(*
     <=nrel_sc_text_translation: ... (*->rrel_example:[МЕДИЦИНА — система научных знаний и практической деятельности, целью которых является укрепление и сохранение здоровья, продление жизни людей, предупреждение и лечение болезней человека.](*<-lang_ru;;*);;*);;
     =>nrel_main_idtf:[Опр.(медицина)](*<-lang_ru;;*);;
 
-    =>nrel_using_constants:{
-      medicine
-      
-    };;
 *);;
