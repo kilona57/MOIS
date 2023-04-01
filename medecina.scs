@@ -1,4 +1,4 @@
-sc_node_not_relation->medicine;;
+concept_medicine(*<-sc_node_class;;*);
 
 medicine=>nrel_main_idtf:[medicine](*<-lang_en;;*);;
 medicine=>nrel_main_idtf:[медицина](*<-lang_ru;;*);;
