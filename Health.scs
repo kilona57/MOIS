@@ -1,0 +1,14 @@
+sc_node_relation->concept_health;;
+
+concept_medicine=>nrel_main_idtf:[здоровье](*<-lang_ru;;*);;
+concept_medicine=>nrel_main_idtf:[health](*<-lang_en;;*);;
+
+
+sc_definition -> ...(*
+    
+    <=nrel_sc_text_translation: ... (*->rrel_example:[Здоровье – это состояние организма, в различные возрастные периоды обеспечивающее возможность оптимальной реализации его функций, адаптивных реакций на действия факторов внутренней и внешней среды.](*<-lang_ru;;*);;*);;
+    
+
+    ->rrel_key_sc_element:concept_health;;
+
+*);;
