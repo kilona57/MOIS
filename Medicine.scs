@@ -5,7 +5,7 @@ sc_node_struct->section_subject_domain_of_medicine;;
 		section_subject_domain_of_alternative_medicine(*<-sc_node_struct;;*)
 	};;
 	section_subject_domain_of_medicine->rrel_key_sc_element:section_subject_domain_of_medicine(*<-sc_node_struct;;*);
-	concept_health(*<-sc_node_class*);
+	concept_health(*<-sc_node_class;;*);
 	concept_medicine(*<-sc_node_class;;*);
 	concept_doctor(*<-sc_node_class;;*);
 	concept_patient(*<-sc_node_class;;*);
