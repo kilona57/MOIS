@@ -1,10 +1,10 @@
-sc_node_class->medicine;;
+sc_node_class->concept_medicine;;
 
 medicine=>nrel_main_idtf:[medicine](*<-lang_en;;*);;
 medicine=>nrel_main_idtf:[медицина](*<-lang_ru;;*);;
 
 sc_definition -> ...(*
-    medicine->rrel_key_sc_element:section_subject_domain_of_medicine(*<-sc_node_struct;;*);
+    medicine->rrel_key_sc_element:section_subject_domain_of_medicine;
 
     <=nrel_sc_text_translation: ... (*->rrel_example:[МЕДИЦИНА — система научных знаний и практической деятельности, целью которых является укрепление и сохранение здоровья, продление жизни людей, предупреждение и лечение болезней человека.](*<-lang_ru;;*);;*);;
     =>nrel_main_idtf:[Опр.(медицина)](*<-lang_ru;;*);;
