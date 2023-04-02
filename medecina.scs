@@ -12,6 +12,6 @@ sc_definition -> ...(*
     ->rrel_key_sc_element:concept_medicine;;
 
 *);;
-
+concept_health;;
 
 
