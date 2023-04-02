@@ -12,5 +12,3 @@ sc_definition -> ...(*
     ->rrel_key_sc_element:concept_health;;
 
 *);;
-
-concept_health->rrel_explored_relation:concept_organism;;

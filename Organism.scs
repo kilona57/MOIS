@@ -1,0 +1,14 @@
+sc_node_relation->concept_organism;;
+
+concept_organism=>nrel_main_idtf:[организм](*<-lang_ru;;*);;
+concept_organism=>nrel_main_idtf:[organism](*<-lang_en;;*);;
+
+
+sc_definition -> ...(*
+    
+    <=nrel_sc_text_translation: ... (*->rrel_example:[организм — всякое живое существо, в том числе и человек.](*<-lang_ru;;*);;*);;
+    
+
+    ->rrel_key_sc_element:concept_organism;;
+
+*);;

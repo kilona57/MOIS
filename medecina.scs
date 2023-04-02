@@ -13,5 +13,4 @@ sc_definition -> ...(*
      
 *);;
 
-concept_medicine->rrel_explored_relation:concept_health;;
 
