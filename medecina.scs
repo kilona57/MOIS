@@ -10,8 +10,8 @@ sc_definition -> ...(*
     
 
     ->rrel_key_sc_element:concept_medicine;;
-
+     
 *);;
-concept_health;
 
+->rrel_explored_relation:concept_health;;
 
