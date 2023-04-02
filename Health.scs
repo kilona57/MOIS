@@ -12,4 +12,4 @@ sc_definition -> ...(*
     ->rrel_key_sc_element:concept_health;;
 
 *);;
-
+sc_node_relation->concept_medicine;;
