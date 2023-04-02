@@ -13,4 +13,4 @@ sc_definition -> ...(*
 
 *);;
 
-->rrel_explored_relation:concept_organism;;
+concept_health->rrel_explored_relation:concept_organism;;
