@@ -16,9 +16,9 @@ sc_definition -> ...(*
     =>nrel_main_idtf:[Опр.(болезнь)](*<-lang_ru;;*);;
 
     =>nrel_using_constants:{
-        ->nrel_disease;;
-        ->concept_man;;
-        ->concept_illness;;
+        nrel_disease;
+        concept_man;
+        concept_illness
 
     };;    
 
