@@ -1,22 +1,37 @@
-sc_node_relation->nrel_disease(*<-sc_node_norole_relation;;*);;;
+disease<-sc_node_norole_relation;;
+man<-sc_node_norole_relation;;
+illness<-sc_node_norole_relation;;//заболевание
 
-nrel_disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
-nrel_disease=>nrel_main_idtf:[disease](*<-lang_en;;*);;
+disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
+disease=>nrel_main_idtf:[disease](*<-lang_en;;*);;
 
 
 sc_definition -> ...(*
-    
+
+    ->rrel_key_sc_element:nrel_disease;;
+
     <=nrel_sc_text_translation: ... (*->rrel_example:[Под болезнью понимается заболевания отдельного человека.](*<-lang_ru;;*);;*);;
-    
 
-    ->rrel_key_sc_element:nrel_disease;;
+    =>nrel_main_idtf:[Опр.(состав)](*<-land_ru;;*);;
+
+    =>nrel_using_constants:{
+        man;
+        illness
+
+    };;    
 
 *);;
+
 sc_definition -> ...(*
-    
-    <=nrel_sc_text_translation: ... (*->rrel_example:[nrel_disease.gwf](*<-lang_ru;;*);;*);;
-    
 
     ->rrel_key_sc_element:nrel_disease;;
 
+    <=nrel_sc_text_translation: ... (*->rrel_example:[nrel_disease.gwf](*<-lang_ru;;*);;*);;    
+
 *);;
+
+man=>disease:illness;;
+
+disease
+=>nrel_first_domain:man;
+=>nrel_second_domain:illness;;
