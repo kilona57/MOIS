@@ -1,6 +1,6 @@
-sc_node_not_relation->nrel_disease;;
-sc_node_not_relation->concept_man;;
-sc_node_not_relation->concept_illness;;//заболевание
+nrel_disease<-sc_node_norole_relation;;
+concept_man<-sc_node_norole_relation;;
+concept_illness<-sc_node_norole_relation;;//заболевание
 
 
 nrel_disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
@@ -24,20 +24,20 @@ sc_definition -> ...(*
 
 *);;
 
-// nrel_disease
-//     <- rrel_key_sc_element: ... (*
-//         <- illustration;;
-//         <= nrel_sc_text_translation: ... (*
-//             -> rrel_example: "file://photo//nrel_disease.png"
-//             (*
-//                 => nrel_format: format_png;;
-//             *);;
-//         *);;
-//     *);;
+ nrel_disease
+     <- rrel_key_sc_element: ... (*
+         <- illustration;;
+         <= nrel_sc_text_translation: ... (*
+             -> rrel_example: "file://photo//nrel_disease.png"
+             (*
+                 => nrel_format: format_png;;
+             *);;
+         *);;
+     *);;
 
 
 
-//  man=>disease:illness;;
+  man=>disease:illness;;
 
 
 
