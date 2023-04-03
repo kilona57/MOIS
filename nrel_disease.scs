@@ -1,6 +1,6 @@
-sc_node_not_relation->nrel_disease;;
-sc_node_not_relation->concept_man;;
-sc_node_not_relation->concept_illness;;//заболевание
+sc_node_relation->nrel_disease;;
+sc_node_relation->concept_man;;
+sc_node_relation->concept_illness;;//заболевание
 
 
 nrel_disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
