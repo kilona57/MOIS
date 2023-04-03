@@ -1,21 +1,22 @@
-sc_node_not_relation->nrel_disease;;
+sc_node_not_relation->concept_disease;;
 sc_node_not_relation->concept_man;;
 sc_node_not_relation->concept_illness;;//заболевание
 
 
-nrel_disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
-nrel_disease=>nrel_main_idtf:[disease](*<-lang_en;;*);;
+concept_disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
+concept_disease=>nrel_main_idtf:[disease](*<-lang_en;;*);;
 
 
 sc_definition -> ...(*
 
-    ->rrel_key_sc_element:nrel_disease;;
+    ->rrel_key_sc_element:concept_disease;;
 
     <=nrel_sc_text_translation: ... (*->rrel_example:[Под болезнью понимается заболевания отдельного человека.](*<-lang_ru;;*);;*);;
 
     =>nrel_main_idtf:[Опр.(болезнь)](*<-land_ru;;*);;
 
     =>nrel_using_constants:{
+        concept_disease;
         concept_man;
         concept_illness
 
@@ -25,7 +26,7 @@ sc_definition -> ...(*
 
 sc_definition -> ...(*
 
-    ->rrel_key_sc_element:nrel_disease;;
+    ->rrel_key_sc_element:concept_disease;;
 
     <=nrel_sc_text_translation: ... (*->rrel_example:[nrel_disease.gwf](*<-lang_ru;;*);;*);;    
 
