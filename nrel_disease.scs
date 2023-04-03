@@ -23,16 +23,18 @@ sc_definition -> ...(*
     };;    
 
 *);;
- nrel_disease
+
+nrel_disease
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*
-            -> rrel_example: "file://nrel_disease.jpg"
+            -> rrel_example: "file://photo//nrel_disease.jpg"
             (*
                 => nrel_format: format_jpg;;
             *);;
         *);;
     *);;
+
 
 // sc_definition -> ...(*
 
