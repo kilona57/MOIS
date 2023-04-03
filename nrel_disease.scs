@@ -1,0 +1,22 @@
+sc_node_relation->nrel_disease(*<-sc_node_norole_relation;;*);;;
+
+nrel_disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
+nrel_disease=>nrel_main_idtf:[disease](*<-lang_en;;*);;
+
+
+sc_definition -> ...(*
+    
+    <=nrel_sc_text_translation: ... (*->rrel_example:[Под болезнью понимается заболевания отдельного человека.](*<-lang_ru;;*);;*);;
+    
+
+    ->rrel_key_sc_element:nrel_disease;;
+
+*);;
+sc_definition -> ...(*
+    
+    <=nrel_sc_text_translation: ... (*->rrel_example:[nrel_disease.gwf](*<-lang_ru;;*);;*);;
+    
+
+    ->rrel_key_sc_element:nrel_disease;;
+
+*);;

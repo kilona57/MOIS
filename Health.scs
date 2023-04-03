@@ -12,11 +12,3 @@ sc_definition -> ...(*
     ->rrel_key_sc_element:concept_health;;
 
 *);;
-sc_statement -> ...(*
-    ->rrel_key_sc_element:concept_health;;
-
-    =>nrel_sc_text_traslation: ...(*->rrel_example:["медецина — система научных знаний и практической деятельности, целью которых является укрепление и сохранение здоровья, продление жизни людей, предупреждение и лечение болезней человека."];;*);;
-
-    =>nrel_main_idtf:[Утв.(об здоровье)](*<-lang_ru;;*);;
-
-*);;
