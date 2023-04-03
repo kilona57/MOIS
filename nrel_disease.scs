@@ -1,7 +1,7 @@
-sc_node_norole_relation->disease;;
-sc_node_norole_relation->man;;
-sc_node_norole_relation->illness;;//заболевание
-sc_node_not_relation->number;;
+sc_node_norole_relation->nrel_disease;;
+sc_node_norole_relation->concept_man;;
+sc_node_norole_relation->concept_illness;;//заболевание
+sc_node_not_relation->concept_number;;
 sc_node_not_relation->parametr;;
 sc_node_not_relation->arity;;
 sc_node_not_relation->binary_relation;;
