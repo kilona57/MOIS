@@ -4,7 +4,7 @@ sc_node_not_relation->concept_illness;;//заболевание
 
 
 nrel_disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
-nrel_disease=>nrel_main_idtf:[disease](*<-lang_en;;*);;
+nrel_disease=>nrel_main_idtf:[nrel_disease](*<-lang_en;;*);;
 
 
 sc_definition -> ...(*
