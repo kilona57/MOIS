@@ -11,7 +11,6 @@ sc_node_struct->section_subject_domain_of_medicine;;
 	concept_organism(*<-sc_node_class;;*);
 	concept_doctor(*<-sc_node_class;;*);
 	concept_patient(*<-sc_node_class;;*);
-	concept_disease(*<-sc_node_class;;*);
 	concept_drug(*<-sc_node_class;;*);
         nrel_disease(*<-sc_node_norole_relation;;*);
 		nrel_injury(*<-sc_node_norole_relation;;*);
