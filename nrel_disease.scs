@@ -24,14 +24,14 @@ sc_definition -> ...(*
 
 *);;
 
-sc_definition -> ...(*
+// sc_definition -> ...(*
 
-    ->rrel_key_sc_element:concept_disease;;
+//     ->rrel_key_sc_element:concept_disease;;
 
-    <=nrel_sc_text_translation: ... (*->rrel_example:[nrel_disease.gwf](*<-lang_ru;;*);;*);;    
+//     <=nrel_sc_text_translation: ... (*->rrel_example:[nrel_disease.gwf](*<-lang_ru;;*);;*);;    
 
-*);;
+// *);;
 
-man=>disease:illness;;
+// man=>disease:illness;;
 
 
