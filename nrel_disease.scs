@@ -1,6 +1,17 @@
 disease<-sc_node_norole_relation;;
 man<-sc_node_norole_relation;;
 illness<-sc_node_norole_relation;;//заболевание
+number<-sc_node_not_relation;;
+parametr<-sc_node_not_relation;;
+arity<-sc_node_not_relation;;
+binary_relation<-sc_node_not_relation;;
+set<-sc_node_not_relation;;
+score_of_definition<-sc_node_norole_relation;;
+sc_node_not_relation->antitransitivnoe;;
+sc_node_not_relation->antisimetrichnoe;;
+sc_node_not_relation->antirefleksivnoe;;
+sc_node_not_relation->relation;;
+sc_node_not_relation->undirected_relation;;
 
 disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
 disease=>nrel_main_idtf:[disease](*<-lang_en;;*);;
@@ -8,11 +19,11 @@ disease=>nrel_main_idtf:[disease](*<-lang_en;;*);;
 
 sc_definition -> ...(*
 
-    ->rrel_key_sc_element:nrel_disease;;
+    ->rrel_key_sc_element:disease;;
 
     <=nrel_sc_text_translation: ... (*->rrel_example:[Под болезнью понимается заболевания отдельного человека.](*<-lang_ru;;*);;*);;
 
-    =>nrel_main_idtf:[Опр.(состав)](*<-land_ru;;*);;
+    =>nrel_main_idtf:[Опр.(болезнь)](*<-land_ru;;*);;
 
     =>nrel_using_constants:{
         man;
@@ -24,7 +35,7 @@ sc_definition -> ...(*
 
 sc_definition -> ...(*
 
-    ->rrel_key_sc_element:nrel_disease;;
+    ->rrel_key_sc_element:disease;;
 
     <=nrel_sc_text_translation: ... (*->rrel_example:[nrel_disease.gwf](*<-lang_ru;;*);;*);;    
 
@@ -32,6 +43,28 @@ sc_definition -> ...(*
 
 man=>disease:illness;;
 
+parametr->arity;;
+number->2;;
+binary_relation->disease;
+=>2;
+<-arity;;
+
+
+...
+->man;illness;
+<=union:set;;
+
 disease
 =>nrel_first_domain:man;
-=>nrel_second_domain:illness;;
+=>nrel_second_domain:illness;
+=>score_of_definition:set;
+<-antisimetrichnoe;antirefleksivnoe;antitransitivnoe;;
+
+relation
+=>nrel_inclusion:uirected_relation;
+=>nrel_inclusion:binary_relation;;
+
+binary_relation
+=>nrel_inclusion:antisimetrichnoe;
+=>nrel_inclusion:antitransitivnoe;
+=>nrel_inclusion:antirefleksivnoe;;
