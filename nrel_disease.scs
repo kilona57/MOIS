@@ -1,10 +1,10 @@
-nrel_disease<-sc_node_norole_relation;;
-concept_man<-sc_node_norole_relation;;
-concept_illness<-sc_node_norole_relation;;//заболевание
+sc_node_norole_relation->nrel_disease;;
+sc_node_norole_relation->concept_man;;
+sc_node_norole_relation->concept_illness;;//заболевание
 
 
 nrel_disease=>nrel_main_idtf:[болезнь](*<-lang_ru;;*);;
-nrel_disease=>nrel_main_idtf:[nrel_disease](*<-lang_en;;*);;
+nrel_disease=>nrel_main_idtf:[disease](*<-lang_en;;*);;
 
 
 sc_definition -> ...(*
