@@ -12,9 +12,4 @@ sc_definition -> ...(*
      
 *);;
 
-concept_medicine
-=> nrel_using_constants: ... (*
-    
-    -> concept_medicine;;
-           
-*);;
+
