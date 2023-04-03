@@ -28,9 +28,9 @@ nrel_disease
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*
-            -> rrel_example: "file://ostis-example-app//kb//nrel_disease.pnj"
+            -> rrel_example: "file://ostis-example-app//kb//nrel_disease.png"
             (*
-                => nrel_format: format_jpg;;
+                => nrel_format: format_png;;
             *);;
         *);;
     *);;
