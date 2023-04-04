@@ -7,7 +7,7 @@ concept_medicine=>nrel_main_idtf:[medicine](*<-lang_en;;*);;
 			...
 			(* 
 			-> rrel_example: "file://HTML/Medicine_idtf.html" (* <-lang_ru;; *);;
-			*);;
+			*);
 
 sc_definition -> ...(*
     
