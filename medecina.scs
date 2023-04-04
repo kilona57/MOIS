@@ -3,15 +3,13 @@ sc_node_relation->concept_medicine;;
 concept_medicine=>nrel_main_idtf:[медицина](*<-lang_ru;;*);;
 concept_medicine=>nrel_main_idtf:[medicine](*<-lang_en;;*);;
 
-<-rrel_example:
-        ...
-        (*
-            => nrel_main_idtf: [Опр.(медицина)] (* <-lang_ru;; *);;
-            <= nrel_sc_text_translation:
-			...
-			(* 
-			-> rrel_example: "file://HTML/Medicine_idtf.html" (* <-lang_ru;; *);;
-			*);;
+medicine <-rrel_key_sc_element:...(*
+    <-definition;;
+	=>nrel_main_idtf:
+       [Описание (медицина)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+        -> rrel_example: "file://HTML/Medicine_idtf.html" (* <-lang_ru;; *);;
+		*);;
         *);;
 
 
