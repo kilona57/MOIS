@@ -3,18 +3,25 @@ sc_node_relation->concept_medicine;;
 concept_medicine=>nrel_main_idtf:[медицина](*<-lang_ru;;*);;
 concept_medicine=>nrel_main_idtf:[medicine](*<-lang_en;;*);;
 
-<= nrel_sc_text_translation:
+<-rrel_example:
+        ...
+        (*
+            <-definition;;
+            => nrel_main_idtf: [Опр.(медицина)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation:
 			...
 			(* 
 			-> rrel_example: "file://HTML/Medicine_idtf.html" (* <-lang_ru;; *);;
-			*);
+			*);;
+        *);;
 
-sc_definition -> ...(*
+
+// sc_definition -> ...(*
     
-    // <=nrel_sc_text_translation: ... (*->rrel_example:[медицина — система научных знаний и практической деятельности, целью которых является укрепление и сохранение здоровья, продление жизни людей, предупреждение и лечение болезней человека.](*<-lang_ru;;*);;*);;
+//      <=nrel_sc_text_translation: ... (*->rrel_example:[медицина — система научных знаний и практической деятельности, целью которых является укрепление и сохранение здоровья, продление жизни людей, предупреждение и лечение болезней человека.](*<-lang_ru;;*);;*);;
 
-          ->rrel_key_sc_element:concept_medicine;;
+//           ->rrel_key_sc_element:concept_medicine;;
      
-*);;
+// *);;
 
 
