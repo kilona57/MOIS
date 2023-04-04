@@ -12,7 +12,7 @@ sc_definition -> ...(*
 			...
 			(* 
 			-> rrel_example: "file://HTML/Medicine_idtf.html" (* <-lang_ru;; *);;
-			*);
+			*);;
 
     ->rrel_key_sc_element:concept_medicine;;
      
