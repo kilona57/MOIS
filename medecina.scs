@@ -6,7 +6,6 @@ concept_medicine=>nrel_main_idtf:[medicine](*<-lang_en;;*);;
 <-rrel_example:
         ...
         (*
-            <-definition;;
             => nrel_main_idtf: [Опр.(медицина)] (* <-lang_ru;; *);;
             <= nrel_sc_text_translation:
 			...
